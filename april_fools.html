@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April Fools' Surprise!</title>
+    <style>
+        body {
+            background-color: #ffebf0;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            padding: 50px;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .hidden-message {
+            display: none;
+            font-size: 20px;
+            color: #ff4081;
+            margin-top: 20px;
+        }
+        .button {
+            background: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Cutie! ❤</h1>
+        <p>Click the button below for a surprise!</p>
+        <button class="button" onclick="revealMessage()">Click Me!</button>
+        <p class="hidden-message" id="hiddenMessage">April Fools! 😆 You thought there was something special? Well, YOU are special! ❤</p>
+    </div><script>
+    function revealMessage() {
+        document.getElementById('hiddenMessage').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
